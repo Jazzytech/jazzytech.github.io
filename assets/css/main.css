@@ -1,0 +1,1313 @@
+/*-------------------------------------
+Template Name: Prenu One Page Business HTML Template.
+Template URI: https://ryetheme.com/
+Description: Prenu is suitable for all creative people, agency, creative business, company, individual or agencies portfolios etc.
+it is well organized, fully customizable and easy to use.
+Author: Devaroon
+Author URI: https://ryetheme.com/
+Version: 1.0
+---------------------------------------
+            CSS INDEX
+---------------------------------------
+1.Theme Default CSS (body, link color, overlay etc).
+2.Preloader Area
+3.Start header-top bar css
+4.Header Area Start Here
+5.image Section css
+6.slider Section css
+7.particles Section css
+8.Youtube-vedio Section css
+9.About Section Css
+10.Service Section Css
+11.Counter Section Css
+12.Portfolio Section Css
+13.Pricing Plan Section CSS
+14.Vedio Section Css
+15.Team Section Css
+16.Testimonial Section Css
+17.Blog Section Css
+18.Contact Section Css
+19.Map-area Section Css
+20.Footer area Css
+21.Prenu-Banner Css
+22.Blog.html Css
+23.Single-Blog.html Css
+24.prenu index.html Css Here
+25.Scroll Top Css
+---------------------------------------*/
+
+/*---------------------------------------
+    1.Theme Default CSS
+---------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Ubuntu:400,700');
+* {
+    margin:0;
+    padding:0
+}
+a {
+    text-decoration:none
+}
+a:hover,a:focus {
+    text-decoration:none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+p{
+    font-size: 15px;
+    color:#4a4747;
+}
+li {
+    list-style:none
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4a4747;
+}
+section {
+    overflow:hidden
+}
+.section-padding{
+    padding: 60px 0px;
+}
+.prenu-header {
+    margin-bottom: 60px;
+}
+.prenu-header h2 {
+    text-transform:uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+.prenu-header span{
+    color: #f44336;
+}
+.prenu-header p {
+    color: #222;
+}
+.prenu-btn {
+    padding:10px 20px;
+    background:#F44336;
+    color:#fff;
+    font-size:18px;
+    text-transform: capitalize;
+}
+.prenu-btn:hover,.prenu-btn:focus {
+    color:#fff
+}
+.overlay {
+    background: #000;
+    height:100%;
+    opacity:.8;
+    overflow:hidden;
+    width:100%
+}
+/*---------------------------------------
+    Theme Default CSS
+---------------------------------------*/
+/*---------------------------------------
+    2.Start Preloader Area css
+---------------------------------------*/
+.preloader-area {
+    background: #f44336;
+    height:100%;
+    overflow:hidden;
+    position:fixed;
+    width:100%;
+    z-index:11000
+}
+.loader {
+    height: 50px;
+    margin-top: calc(50vh - 25px);
+    margin-left: calc(50vw - 100px);
+    width: 180px;
+}
+.circle{
+    border-radius: 50%;
+    border: 3px #fff solid;
+    float: left;
+    height: 50px;
+    margin: 0 5px;
+    width: 50px;
+}
+.circle-1 {
+    animation: move 1s ease-in-out infinite;
+}
+.circle-1a {
+    animation: fade 1s ease-in-out infinite;
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.circle-2 {
+    animation: move 1s ease-in-out infinite;
+}
+@keyframes move {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(60px);}
+}
+.circle-1a {
+    margin-left: -55px;
+    opacity: 0;
+}
+.circle-3 {
+    animation: circle-3 1s ease-in-out infinite;
+    opacity: 1;
+}
+@keyframes circle-3 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/*---------------------------------------
+    End Preloader Area css
+---------------------------------------*/
+/*----------------------------
+   3.Start header-top bar css
+------------------------------*/
+.header-top-bar{
+    background: #f44336;
+    padding: 10px;
+}
+.header-top-left {
+    float: left;
+}
+.header-top-left ul li{
+   list-style: none;
+   float: left;
+   margin-right: 20px;
+}
+.header-top-left ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+.header-top-left ul li a i{
+    margin-right: 10px;
+}
+.header-top-right{
+    overflow: hidden;
+    float: right;
+}
+.header-top-right ul li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+.header-top-right ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+.header-top-right ul li a i{
+    margin-right: 5px;
+}
+/*----------------------------
+   End header-top bar css
+------------------------------*/
+/*---------------------------------------
+    4.Start Header Area css
+---------------------------------------*/
+header {
+    left:0;
+    position:absolute;
+    top:60px;
+    width:100%;
+    z-index:337
+}
+
+header.sticky {
+    background-color:#fff;
+    border-bottom:1px solid #F44336;
+    position:fixed;
+    top:0
+}
+
+header.sticky .navbar-default .navbar-nav > li > a {
+    color:#222
+}
+
+.sticky .navbar {
+    margin:10px 0;
+    transition:.5s
+}
+
+.sticky .navbar-default .navbar-brand {
+    color:#222
+}
+
+.navbar-default {
+    background-color:transparent;
+    border:none;
+    text-transform:uppercase
+}
+
+.navbar-default .navbar-brand {
+    color:#fff
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#fff;
+    font-size:12px;
+    letter-spacing:1px
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color:#fff
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color:#fff
+}
+.navbar-default .navbar-toggle {
+    background:#fff;
+    border:none;
+    border-radius:0
+}
+
+.navbar-default .navbar-toggle:hover {
+    background:#fff
+}
+
+.navbar-default .navbar-toggle:focus {
+    background:#fff
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#16263f
+}
+/*---------------------------------------
+    End Header Area css
+---------------------------------------*/
+/*---------------------------------------
+    5.Start image section css
+---------------------------------------*/
+.banner{
+    background: url("../img/image-bg.jpg")no-repeat center fixed;
+    background-size: cover;
+    height: 680px;
+    position: relative;
+    overflow: hidden;
+}
+.banner-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #222;
+    opacity: .7
+}
+.welcome_text {
+    color:#fff;
+    display:block;
+    margin-bottom:200px;
+    margin-top:260px;
+    position:relative;
+    text-align:center
+}
+.welcome_text h1 {
+    font-size:58px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    text-transform:capitalize
+}
+.welcome_text h4 {
+    color:#fff;
+    margin-bottom:40px
+}
+/*---------------------------------------
+    End image section css
+---------------------------------------*/
+/*---------------------------------------
+    6.Start slider Section css
+---------------------------------------*/
+.slider-area {
+    overflow:hidden
+}
+.single_slider-1 {
+    background:url(../img/slider-1.jpg) no-repeat center center / cover;
+    color: #fff;
+    position:relative
+}
+.single_slider-2 {
+    background:url(../img/slider-2.jpg) no-repeat center center / cover;
+    color:#fff;
+    position:relative
+}
+.single_slider-3 {
+    background:url(../img/slider-3.jpg) no-repeat center center / cover;
+    color:#fff;
+    position:relative
+}
+.slider-overlay {
+    background-color:#222;
+    height:100%;
+    left:0;
+    opacity:.7;
+    position:absolute;
+    top:0;
+    width:100%
+}
+.scroll-icon {
+    margin-top:-50px;
+    text-align:center
+}
+.scroll-icon a {
+    border:1px solid #fff;
+    border-radius:19px;
+    color:#fff;
+    font-size:20px;
+    height:57px;
+    padding-top:20px;
+    position:absolute;
+    text-align:center;
+    width:30px
+}
+.slick-vertical .slick-slide {
+    border:medium none;
+    display:block;
+    height:700px
+}
+.regular .slick-dots {
+    right:-45%;
+    transform:rotate(90deg);
+    bottom:50%
+}
+.regular .slick-dots li button::before {
+    background:#fff;
+    border-radius:10px;
+    content:"";
+    height:15px;
+    margin-top:0;
+    width:15px
+}
+.regular.slick-dotted.slick-slider {
+    margin-bottom:0
+}
+/*---------------------------------------
+    End slider Section css
+---------------------------------------*/
+
+/*---------------------------------------
+    7.Start youtube-vedio Section css
+---------------------------------------*/
+#youtube-vedio{
+    height: 680px;
+}
+/*---------------------------------------
+    End youtube-vedio Section css
+---------------------------------------*/
+
+/*---------------------------------------
+    8.Start Particles Section css
+---------------------------------------*/
+.particle-banner{
+    background-image: url(../img/slider-2.jpg);
+    background-color: #222;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+    position: relative;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    opacity: .7;
+}
+
+/*---------------------------------------
+    End Particles Section css
+---------------------------------------*/
+/*---------------------------------------
+    9.Start About Section css
+---------------------------------------*/
+.about {
+    background:#f9f9f9
+}
+.about-right-text p {
+    margin-bottom:30px;
+    margin-top:30px
+}
+/*---------------------------------------
+    End About Section css
+---------------------------------------*/
+/*---------------------------------------
+    10.Strat Service Section css
+---------------------------------------*/
+.service-box {
+    margin-bottom:60px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 2px 7px #e7e7e7;
+}
+.service-box:hover .service-box-icon{
+    background: transparent;
+    border: 1px solid #f44336;
+    color: #f44336;
+    transition: .5s;
+}
+.service-box:hover .service-box-icon i{
+    color: #f44336;
+    transition: .5s;
+}
+.service-box .service-box-icon {
+    background: #f44336;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+    width: 60px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.service-box .service-box-icon i {
+    color: #fff;
+    font-size: 30px;
+    transform: rotate(-45deg);
+}
+.service-box-details {
+    margin-bottom: 30px;
+}
+.service-box-details h4 {
+    text-transform: capitalize;
+}
+
+.service-box-details p {
+    margin-bottom: 20px;
+}
+.service-box-details .service-btn{
+    padding: 10px 25px;
+    background: #f44336;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+.load{
+    display: none;
+}
+.service-more .service-load{
+    padding: 10px 25px;
+    background: #f44336;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    text-transform: capitalize;
+}
+/*---------------------------------------
+    End Service Section css
+---------------------------------------*/
+/*---------------------------------------
+    11.Start counter Section css
+---------------------------------------*/
+.countdown-area{
+    background: url("../img/counter-bg.jpg")no-repeat center fixed;
+    background-size: cover;
+    overflow:hidden;
+    position: relative;
+}
+.countdown-overlay {
+    background-color: #222;
+    height:100%;
+    left:0;
+    opacity:.7;
+    position:absolute;
+    top:0;
+    width:100%
+}
+.countdown{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 20px;
+    transition: .5s;
+    background: #222;
+    opacity: .7;
+}
+.countdown:hover{
+    background: #f44336;
+}
+.counticon{
+    color: #fff;
+}
+.counticon i{
+    font-size: 40px;
+}
+/*---------------------------------------
+    End COunter Section css
+---------------------------------------*/
+/*---------------------------------------
+    12.Start Portfolio Section css
+---------------------------------------*/
+.single-item {
+    margin-bottom:0;
+    padding-left:0;
+    padding-right:0
+}
+.portfolio-single-item {
+    overflow:hidden;
+    position:relative
+}
+
+.portfolio-single-item img {
+    width:100%;
+    height: 100%;
+}
+
+.portfolio-single-item:hover .portfolio-single-item-overlay {
+    top:0
+}
+.portfolio-single-item-overlay {
+    background:#F44336 none repeat scroll 0 0;
+    height:100%;
+    opacity:.8;
+    position:absolute;
+    top:-100%;
+    transition:.5s;
+    width:100%
+}
+.portfolio-single-item-overlay ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.portfolio-single-item-overlay i {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    margin-left: 40%;
+}
+.project-title {
+    margin-top: 25%;
+}
+.project-title h4{
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+/*---------------------------------------
+    End Portfolio Section css
+---------------------------------------*/
+/*---------------------------------------
+    13.Start Pricing Section css
+---------------------------------------*/
+.pricing-area{
+    padding: 10px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+.pricing-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pricing-title h4{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.pricing-price{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pricing-price h2{
+    color: #F44336;
+}
+.pricing-price h2 span{
+    font-size: 16px;
+}
+.pricing-list {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+.pricing-list ul li{
+    line-height: 40px;
+}
+.pricing-list ul li span{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.pricing-list ul li i{
+    margin-right: 15px;
+    color: #F44336;
+    font-size: 18px;
+}
+.pricing-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*---------------------------------------
+    End Pricing Section css
+---------------------------------------*
+/*---------------------------
+    14.Start video Section css
+-----------------------------*/
+.video {
+    background: url("../img/vedio-bg.jpg")no-repeat center fixed;
+    background-size: cover;
+    overflow:hidden;
+    position: relative;
+}
+.video-overlay{
+    background-color: #222;
+    height:100%;
+    left:0;
+    opacity: .7;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.video-area {
+    margin-bottom:150px;
+    margin-top:15%;
+     position: relative;
+}
+.video-area i {
+    border:2px solid #ccc;
+    border-radius:50%;
+    color:#fff;
+    font-size:50px;
+    height:80px;
+    padding:15px 25px;
+    text-align:center;
+    width:80px;
+}
+.video-area h1 {
+    color:#fff;
+}
+/*---------------------------
+    End video Section css
+-----------------------------*/
+
+/*---------------------------------------
+    15.Start Team Section css
+---------------------------------------*/
+.team-member{
+    position: relative;
+    overflow: hidden;
+}
+.team-member img{
+    width: 100%;
+    height: 100%;
+}
+.team-overlay{
+    position:absolute;
+    width: 100%;
+    height: 45%;
+    bottom:-100%;
+    background: #f44336;
+}
+.team-member:hover .team-overlay{
+    bottom: 0;
+    transition: .5s;
+}
+.team-details {
+    padding:10px;
+    color: #fff;
+}
+.team-details ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.team-details ul li i {
+    background:#333;
+    border-radius:30px;
+    color:#fff;
+    height:40px;
+    padding:13px;
+    width:40px
+}
+/*---------------------------------------
+    End Team Section css
+---------------------------------------*/
+
+/*---------------------------------------
+    16.Start Testimonial Section css
+---------------------------------------*/
+.testimonial {
+    background: url("../img/testimonial-bg.jpg")no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+}
+.testimonial-overlay {
+    background-color: #222;
+    height:100%;
+    left:0;
+    opacity:.7;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.testimonial-header{
+    color: #fff;
+    margin-top: 40px;
+}
+.testimonial-header h2{
+    text-transform: uppercase;
+}
+.testimonial-header h2 span{
+    color: #f44336;
+}
+.testimonial-header p {
+    padding: 0 25%;
+    text-transform: capitalize;
+}
+.testimonial-area {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    transition: .5s;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.testimonial-member img{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 70px;
+    margin-bottom: -10px;
+    border: 3px solid #fff;
+    height: 100px;
+    width: 100px;
+}
+.testimonial-details h4, h5{
+    text-transform: capitalize;   
+}
+.responsive .slick-prev {
+    left: -80px;
+    z-index: 1;
+}
+.responsive .slick-prev::before {
+    content: "\f104";
+    font-family: 'FontAwesome';
+    color: #fff !important;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 3px 15px;
+    font-weight: bold;
+}
+.responsive .slick-next {
+    right: -80px;
+}
+.responsive .slick-next::before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    color: #fff !important;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 3px 15px;
+    font-weight: bold;
+}
+.responsive .slick-prev, .slick-next {
+    width: 45px;
+    height: 45px;
+}
+/*---------------------------------------
+    Start Testimonial Section css
+---------------------------------------*/
+/*---------------------------------------
+    17.Start Blog Section css
+---------------------------------------*/
+.blog-area {
+    box-shadow:0px 0px 2px #ccc;
+}
+.blog-img{
+    position: relative;
+}
+.blog-date {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #F44336;
+    border-radius: 20px;
+    padding: 10px;
+}
+.blog-date h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.blog-info {
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: -10px;
+}
+.blog-info span{
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.blog-info span a{
+    margin-left: 10px;
+    color: #333;
+}
+.blog-info i {
+    color:#F44336;
+    margin-right:5px
+}
+.blog-details {
+    padding: 10px
+}
+.blog-details a {
+    color:#F44336;
+    font-weight:700
+}
+.padding-tp{
+    margin-top: 50px;
+}
+.blog-padding{
+    margin-bottom: 60px;
+}
+/*---------------------------------------
+    End Blog Section css
+---------------------------------------*/
+/*---------------------------------------
+    18.Start Conatct Section css
+---------------------------------------*/
+.contact {
+    background:#f9f9f9
+}
+.contact-address{
+    margin-top: 30px;
+}
+.contact-address i {
+    color: #F44336;
+    font-size: 24px;
+    line-height: 60px;
+    margin-right: 20px;
+}
+.contact-address span{
+    font-size: 14px;
+}
+.contact-form {
+    margin-bottom:30px;
+    margin-top:20px;
+    overflow:hidden
+}
+
+.contact-form input,.contact-form textarea {
+    border:none
+}
+
+.contact-form input:focus {
+    border-color:#F44336;
+    transition:.3s
+}
+
+.contact-form input,.contact-form textarea {
+    border-bottom:2px solid #ccc;
+    color:#a69999;
+    padding:10px 0;
+    width:100%
+}
+
+.contact-form textarea:focus {
+    border-color:#F44336;
+    border-right:none;
+    transition:.3s
+}
+
+.confirm .btn-danger {
+    background-color:#F44336;
+    border-color:#F44336;
+    border-radius:0;
+    color:#fff;
+    font-size:18px;
+    padding:10px 30px;
+    text-transform: capitalize;
+}
+
+.confirm .btn-danger:hover,.confirm .btn-danger:focus {
+    background-color:#F44336;
+    border-color:#F44336;
+    color:#fff;
+    transition:.3s
+}
+/*---------------------------------------
+    End Conatct Section css
+---------------------------------------*/
+/*---------------------------
+    19.Start Map section css
+----------------------------*/
+#map{
+    height: 400px;
+    width: 100%;
+}
+/*---------------------------
+    End Map section css
+----------------------------*/
+/*---------------------------------------
+   20.Start Footer-area css
+---------------------------------------*/
+.footer-area {
+    background:#222;
+}
+
+.footer-social-link {
+    float:right;
+    margin-bottom:20px;
+    margin-top:40px
+}
+
+.footer-social-link ul li {
+    display:inline-block;
+    margin-right:10px
+}
+
+.footer-social-link ul li a i {
+    border:1px solid #fff;
+    border-radius:30px;
+    color:#fff;
+    font-size:16px;
+    height:40px;
+    padding:13px;
+    text-align:center;
+    width:40px
+}
+
+.footer-text {
+    margin-bottom:30px;
+    margin-top:50px
+}
+
+.footer-text p {
+    color:#fff
+}
+/*---------------------------------------
+    End Footer-area css
+---------------------------------------*/
+
+/*---------------------------------------
+    21.Start Prenu-banner Section css
+---------------------------------------*/
+.prenu-banner-header {
+    color:#fff;
+    margin-bottom:50px;
+    margin-top:150px
+}
+.prenu-banner-header .breadcrumb {
+    background:transparent;
+    padding:0
+}
+.prenu-banner-header .breadcrumb li a {
+    color:#fff
+}
+.prenu-banner-header .breadcrumb > .active {
+    color:#F44336;
+}
+/*---------------------------------------
+    End Prenu-banner Section css
+---------------------------------------*/
+/*---------------------------------------
+    22.Start Blog.html css
+-----------------------------------------*/
+.prenu-page{
+    margin-bottom: 40px;
+}
+.prenu-pagination ul li {
+    display: inline-block;
+    margin-top: 20px;
+}
+.prenu-pagination ul li a{
+    padding: 0px 10px;
+    border:1px solid #F44336;
+    font-size: 18px;
+    color: #222;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.prenu-pagination ul li a:hover{
+    background: #F44336;
+    border-color: #F44336;
+    color: #fff;
+}
+.prenu-pagination ul li .active{
+   background: #F44336;
+    border-color: #F44336;
+    color: #fff; 
+}
+.widget-serach .form-control{
+    position: relative;
+    border-color: #F44336;
+    border-radius: 0px;
+    height: 41px;
+}
+.widget-serach .serach-btn {
+    position: absolute;
+    right: 15px;
+    padding: 7px 10px;
+    background: #F44336;
+    color: #fff;
+    top: 0px;
+}
+.widget-blog-title{
+    margin-bottom: 20px;
+}
+.widget-blog-title h4{
+    font-weight: bold;
+}
+.single-post ul li{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #F44336;
+}
+.single-post ul li a{
+    color: #222;
+}
+.single-post ul li a i{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.single-category ul li{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #F44336;
+}
+.single-category ul li a{
+    color: #222;
+}
+.single-category ul li a i{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.widget-meta-list ul li{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.widget-meta-list ul li a {
+    color: #333;
+    border: 1px solid #d7d7d7;
+    padding: 5px 12px;
+    font-size: 15px !important;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+/*---------------------------------------
+    Start Blog.html css
+-----------------------------------------*/
+
+/*---------------------------------------
+    23.Start Singele-Blog.html css
+---------------------------------------*/
+blockquote {
+    border-left: 5px solid #F44336;
+    font-size: 15px;
+    background: #efefed;
+}
+.single-blog-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.single-blog-info span{
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.single-blog-info span a{
+    margin-left: 10px;
+    color: #333;
+}
+.single-blog-info i {
+    color:#F44336;
+    margin-right:5px
+}
+
+.prenu-comment-area{
+    margin-top: 40px;
+}
+.prenu-single-comment {
+    border-bottom: 1px solid #F44336;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.prenu-single-comment:nth-child(2n+1){
+    padding-left: 100px;
+}
+.prenu-single-comment:last-child{
+    border:none;
+}
+.prenu-comment-area h2{
+    margin-bottom: 30px;
+}
+.prenu-comment-img {
+    float: left;
+}
+.prenu-comment-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.prenu-comment-details{
+    margin-left: 130px;
+}
+.prenu-comment-details li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.prenu-comment-details p{
+    color: #8f8f8f;
+}
+.prenu-comment-details li i{
+    margin-right: 10px;
+}
+.prenu-reply-button{
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.prenu-comment-form h4{
+    margin-bottom: 30px;
+}
+.prenu-comment-button{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.reply-btn{
+    padding: 10px 15px;
+    background: #F44336;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.reply-btn:hover{
+    color: #fff;
+}
+
+.comments-area{
+    margin-top: 40px;
+}
+.comments-form input,.comments-form textarea {
+    border:none
+}
+.comments-form input:focus {
+    border-color:#F44336;
+    transition:.3s
+}
+.comments-form input,.comments-form textarea {
+    border-bottom:2px solid #ccc;
+    color:#a69999;
+    padding:10px 0;
+    width:100%
+}
+.commentss-form textarea:focus {
+    border-color:#F44336;
+    border-right:none;
+    transition:.3s
+}
+/*---------------------------------------
+    End Singele-Blog.html css
+---------------------------------------*/
+/*---------------------------------------
+    24.Prenu index.html Css Here
+---------------------------------------*/
+.prenu-bg {
+    background: url(../img/prenu-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.prenu-bg-overlay{
+    background-color: #222;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+.prenu-title {
+    margin-top: 110px;
+    margin-bottom: 140px;
+}
+.prenu-title h1 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+.prenu-title p {
+    color: #fff;
+    padding: 0 20%;
+    font-size: 16px;
+}
+.select-design {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.category{
+    margin-bottom: 40px;
+}
+.select-category {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.select-category img {
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+.select-category:hover img {
+    transform: scale(1.3);
+}
+.select-category-details {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.select-category-details h3 a{
+    color: #333;
+}
+.select-category-details a{
+    color: #F44336;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*---------------------------------------
+    Prenu index.html Css Here
+---------------------------------------*/
+/*---------------------------------------
+    25.Start #scroll-up css
+---------------------------------------*/
+#scroll-up {
+    background:#333;
+    border-radius:50%;
+    bottom:10px;
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    font-size:24px;
+    height:46px;
+    line-height:42px;
+    position:fixed;
+    right:10px;
+    text-align:center;
+    text-decoration:none;
+    transition:.3s;
+    width:46px;
+    z-index:337
+}
+
+#scroll-up:hover,#scroll-up:focus {
+    background:#333 none repeat scroll 0 0;
+    color:#fff
+}
+/*---------------------------------------
+    End #scroll-up css
+---------------------------------------*/
