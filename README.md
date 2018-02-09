@@ -1,1 +1,1 @@
-# Jazzytech-website
+# jazzytech.github.io
